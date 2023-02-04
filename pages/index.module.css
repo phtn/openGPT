@@ -1,24 +1,11 @@
-@font-face {
-  font-family: "ColfaxAI";
-  src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2)
-      format("woff2"),
-    url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "ColfaxAI";
-  src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
-    url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
+
 .main,
 .main input {
   font-size: 16px;
   line-height: 24px;
   color: #353740;
-  font-family: "ColfaxAI", Helvetica, sans-serif;
+  font-family: Fira Mono, monosapce;
 }
 .main {
   display: flex;
@@ -27,14 +14,14 @@
   padding-top: 60px;
 }
 .main .icon {
-  width: 34px;
+  width: 50px;
 }
 .main h3 {
-  font-size: 32px;
+  font-size: 24px;
   line-height: 40px;
   font-weight: bold;
   color: #202123;
-  margin: 16px 0 40px;
+  /* margin: 16px 0 40px; */
 }
 .main form {
   display: flex;
@@ -47,6 +34,7 @@
   border-radius: 4px;
   margin-bottom: 24px;
   outline-color: #10a37f;
+  width: 100%
 }
 .main ::placeholder {
   color: #8e8ea0;
@@ -63,5 +51,14 @@
 }
 .main .result {
   font-weight: bold;
-  margin-top: 40px;
+  /* margin-top: 20px; */
+}
+.prompt {
+  border: 1px solid slategray;
+  width: 100%;
+  background-color: papayawhip;
+  color: steelblue;
+  padding: 20px;
+  resize: none;
+  margin-bottom: 20px;
 }
